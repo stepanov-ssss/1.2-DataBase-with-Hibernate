@@ -7,18 +7,14 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
-import javax.transaction.Transactional;
+
 import java.util.List;
 
-import static javax.accessibility.AccessibleState.ACTIVE;
-import static org.hibernate.resource.transaction.spi.TransactionStatus.MARKED_ROLLBACK;
 
-@Transactional
 public class UserDaoHibernateImpl implements UserDao {
     private static SessionFactory sessionFactory = Util.getSessionFactory();
 
     public UserDaoHibernateImpl() {
-
     }
 
     @Override
